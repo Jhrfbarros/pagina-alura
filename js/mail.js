@@ -5,17 +5,17 @@ let transporter = nodemailer.createTransport({
   port: 587
   secure: true
   auth:{
-    user: "kodemenbarros@gmail.com"
+    user: "kodemenbarros@gmail.com",
     pass: "k0d&123456"
   }
 });
 
 transporter.sendMail({
-  from: "kodemenbarros@gmail.com"
-  to: "jhrfbarros@gmail.com"
-  subject: "subject"
-  text:"text"
-  html: <a href = "contato.html" </a>
+  from: "kodemenbarros@gmail.com",
+  to: "jhrfbarros@gmail.com",
+  subject: "subject",
+  text:"text",
+  html: <a href = "contato.html" />
 }).then(message => {
   console.log(message);
 }).cath(err => {
